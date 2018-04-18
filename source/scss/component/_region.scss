@@ -1,0 +1,251 @@
+/* ====================================
+   All region in project
+   ==================================== */
+
+
+/* zone global style */
+
+.zone {
+    margin-bottom: 24px;
+    background: white;
+    padding: 16px;
+    .main-col & {
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+    }
+    &__header {
+        margin-bottom: 16px;
+    }
+    &__title {
+        a {
+            display: inline-block;
+            font-size: 18px;
+            line-height: 1.4;
+            padding: 3px 16px;
+            color: white;
+            background-color: $brand-primary;
+            font-family: $font-family-special;
+            text-transform: uppercase;
+            transition: all 0.2s linear;
+            &:hover {
+                background-color: darken($brand-primary, 10%);
+            }
+        }
+    }
+    &__content {}
+    &--highlight {
+        // border: 1px solid #ddd;
+        margin-bottom: 24px;
+        .zone__content {
+            position: relative;
+            .no-js & {
+                max-height: 495px;
+                overflow: hidden;
+            }
+            .bx {
+                &-controls {
+                    position: absolute;
+                    bottom: 16px;
+                    right: 16px;
+                }
+                &-pager-item {
+                    float: left;
+                    line-height: 0;
+                    &+.bx-pager-item {
+                        margin-left: 8px;
+                    }
+                }
+                &-pager-link {
+                    display: inline-block;
+                    text-indent: -9999em;
+                    background-color: #D8D8D8;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 8px;
+                    transition: all 0.2s linear;
+                    &.active {
+                        background-color: $brand-primary;
+                        width: 24px;
+                    }
+                }
+            }
+        }
+    }
+    &--sub-cate {
+        .zone__content {
+            @include clearfix();
+        }
+        .story--featured {
+            width: 429px;
+            float: left;
+        }
+        .story_listing {
+            width: 223px;
+            float: right;
+            .story {
+                &+.story {
+                    margin-top: 12px;
+                }
+            }
+        }
+    }
+    &--special {
+        padding: 0;
+        background: none;
+        .zone__header {
+            margin-bottom: 8px;
+            position: relative;
+        }
+        .zone__title {
+            a {
+                font-size: 16px;
+                color: $brand-success;
+                padding: 0;
+                background: none;
+                &:hover {
+                    color: darken($brand-success, 10%);
+                }
+            }
+        }
+        .zone__content {
+            background: white;
+            padding: 16px 8px;
+            border: 1px solid #DDDDDD;
+            position: relative;
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 70%;
+                background: url(../img/bg_specialzone.svg) right top no-repeat;
+                background-size: cover;
+                z-index: 0;
+            }
+        }
+        .no-js & {
+            max-height: 130px;
+            overflow: hidden;
+        }
+        .bx {
+            &-pager {
+                position: absolute;
+                top: 10px;
+                right: 0px;
+            }
+            &-pager-item {
+                float: left;
+                line-height: 0;
+                &+.bx-pager-item {
+                    margin-left: 8px;
+                }
+            }
+            &-pager-link {
+                display: inline-block;
+                text-indent: -9999em;
+                background-color: #D8D8D8;
+                width: 10px;
+                height: 10px;
+                border-radius: 8px;
+                transition: all 0.2s linear;
+                &.active {
+                    background-color: $brand-success;
+                    width: 24px;
+                }
+            }
+        }
+    }
+    &--video {
+        background-color: transparent;
+        padding: 0;
+        margin-bottom: 0;
+        .zone__content {
+            background-color: #2e2f2f;
+            padding: 16px;
+            @include clearfix();
+        }
+        .story--video-featured {
+            width: 684px;
+            float: left;
+        }
+        .story_listing {
+            width: 284px;
+            height: 376px;
+            float: right;
+            overflow: auto;
+            background-color: #f7f7f7;
+            padding: 16px 10px;
+        }
+    }
+    .timeline_listing {
+        margin-top: 16px;
+        padding-top: 16px;
+        border-top: 1px solid #ddd;
+    }
+    .editor_choice {
+        padding: 16px;
+        margin-top: 16px;
+        background-color: $brand-success;
+    }
+    .sidebar-col & {
+        border: 1px solid #ddd;
+        .zone__title {
+            position: relative;
+            min-height: 25px;
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                right: 0;
+                height: 1px;
+                background-color: $brand-primary;
+            }
+            a {
+                font-size: 16px;
+                line-height: 25px;
+                position: absolute;
+                background-color: white;
+                padding: 0 8px 0 0;
+                color: $brand-primary;
+                z-index: 10;
+                &:hover {
+                    color: $brand-success;
+                }
+            }
+        }
+        &--special {
+            padding: 0;
+            background: none;
+            border: none;
+            .zone__header {
+                margin-bottom: 8px;
+                position: relative;
+            }
+            .zone__title {
+                &::after {
+                    display: none;
+                }
+                a {
+                    font-size: 16px;
+                    color: $brand-success;
+                    padding: 0;
+                    background: none;
+                    position: static;
+                    &:hover {
+                        color: darken($brand-success, 10%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ads
+.qc {
+    @include clearfix();
+    margin-bottom: 24px;
+    text-align: center;
+}

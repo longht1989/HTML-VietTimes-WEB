@@ -1,0 +1,38 @@
+/* ====================================
+   Footer's style
+   ==================================== */
+
+#site-footer {
+    margin-top: 32px;
+    @include clearfix;
+}
+
+.site-footer {
+    background: #fff;
+    padding: 24px 0;
+    border-top: 1px solid #ddd;
+    font-size: 12px;
+    line-height: 20px;
+    color: #555;
+    .logo {
+        float: left;
+        img {
+            width: auto;
+            height: 40px;
+        }
+    }
+    .info {
+        float: left;
+        margin-left: 12px;
+    }
+    .contact {
+        float: right;
+        text-align: right;
+        a {
+            color: #555;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
