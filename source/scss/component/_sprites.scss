@@ -117,6 +117,11 @@
         height: 12px;
         background-position: -150px -50px;
     }
+    &-gotop {
+        width: 35px;
+        height: 35px;
+        background-position: -50px -50px;
+    }
 }
 
 *[class^="button-"] {
@@ -155,5 +160,30 @@
         width: 120px;
         height: 30px;
         background-position: -150px -250px;
+    }
+    &-facebook-sm {
+        width: 30px;
+        height: 30px;
+        background-position: 0 -300px;
+    }
+    &-twitter-sm {
+        width: 30px;
+        height: 30px;
+        background-position: -50px -300px;
+    }
+    &-zalo-sm {
+        width: 30px;
+        height: 30px;
+        background-position: -100px -300px;
+    }
+    &-email-sm {
+        width: 30px;
+        height: 30px;
+        background-position: -150px -300px;
+    }
+    &-copy-sm {
+        width: 30px;
+        height: 30px;
+        background-position: -200px -300px;
     }
 }

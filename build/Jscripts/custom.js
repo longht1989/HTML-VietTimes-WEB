@@ -36,4 +36,19 @@ $(function() {
         pagerSelector: ".slider_pager",
         pause: '6000'
     });
+    // go top 
+    $(".sprite-gotop").click(function() {
+        return $("body,html").animate({ scrollTop: 0 }, 800), !1
+    });
+    $(document).scroll(function() {
+        $(document).scrollTop() > 0 ? $("#gotop").fadeIn() : $("#gotop").hide()
+    });
+    // toggle floating social
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > $(".article__summary").offset().top) {
+            $('.social-floating').fadeIn();
+        } else {
+            $('.social-floating').hide();
+        }
+    });
 });

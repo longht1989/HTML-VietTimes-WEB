@@ -17,6 +17,13 @@
         font-size: 24px;
         line-height: 1.3em;
         font-weight: bold;
+        &--sub {
+            font-size: 18px;
+            line-height: 1.3em;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 8px;
+        }
     }
     &__meta {
         color: #999;
@@ -304,6 +311,48 @@
     }
     &__react {
         margin-top: 12px;
+    }
+    .main-col.full & {
+        &-wrap {
+            padding-left: 160px;
+            padding-right: 160px;
+        }
+        &__header {
+            text-align: center;
+        }
+        &__content {
+            .full-img {
+                margin-left: -64px;
+                margin-right: -64px;
+                width: initial;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        &__footer {
+            .box-comment {
+                width: 666px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+
+//floating social
+.social-floating {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    margin-left: -554px;
+    [class^="button-"] {
+        display: block;
+        &+[class^="button-"] {
+            margin-top: 8px;
+        }
     }
 }
 

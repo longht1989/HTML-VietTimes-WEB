@@ -18,6 +18,10 @@
 .main-col {
     float: left;
     width: 700px;
+    &.full {
+        width: 100%;
+        float: none;
+    }
 }
 
 .sidebar-col {
@@ -62,4 +66,12 @@
         vertical-align: top;
         padding: 0 8px;
     }
+}
+
+// go top
+#gotop {
+    // display: none;
+    position: fixed;
+    right: 5%;
+    bottom: 8%;
 }
