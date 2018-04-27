@@ -118,18 +118,22 @@
         /* -------------- */
         .aside-img {
             margin-bottom: 15px;
+            width: 50%;
+            clear: both;
             p.thumbnail {
                 position: relative;
                 width: 100%;
-                margin-bottom: 0px;
+                margin-bottom: 8px;
                 img {
                     max-width: 100%;
                 }
             }
             .fig {
-                font-size: 13px;
-                color: #222;
+                font-size: 14px;
+                line-height: 1.4em;
+                color: #555;
                 font-style: italic;
+                margin-bottom: 0;
             }
             i,
             em {
@@ -141,9 +145,11 @@
         .aside-img.pull-right {
             margin-left: 30px;
             margin-right: 0px;
+            float: right;
         }
         .aside-img.pull-left {
             margin-right: 30px;
+            float: left;
         }
         /* -------------- */
         .article-photo.inlinephoto {
@@ -216,10 +222,9 @@
         /* -------------- */
         .box-relate,
         .notification {
-            padding: 10px;
+            padding: 12px;
             background: lighten($brand-primary, 30%);
             border: 1px dashed #333;
-            border-radius: 3px;
             &.pull-left,
             &.floatleft {
                 float: left;
@@ -233,11 +238,161 @@
                 margin-left: 10px;
             }
         }
+        table.notification {
+            margin-bottom: 16px;
+            td {
+                padding: 12px;
+                border-radius: 3px;
+            }
+        }
+        /* quote */
+        .quote {
+            clear: both;
+            border-radius: 5px;
+            border: 1px solid $brand-success;
+            padding: 16px 16px 24px 24px;
+            position: relative;
+            margin-top: 25px;
+            margin-left: 16px;
+            margin-right: 16px;
+            font-style: italic;
+            &::after {
+                content: '';
+                display: block;
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: url(../img/Sprites.svg) #fff;
+                background-position: -50px -150px;
+                transform: translate(-50%, -50%);
+            }
+            &.pull-left {
+                width: 50%;
+                float: left;
+                margin-right: 25px;
+            }
+            &.pull-right {
+                width: 50%;
+                float: right;
+                margin-left: 25px;
+            }
+        }
+        table.quote {
+            margin-bottom: 16px;
+            td {
+                padding: 16px 16px 24px 24px;
+            }
+        }
+        /* Slider */
+        .slider {
+            background-color: #333333;
+            padding: 16px;
+            position: relative;
+            * {
+                margin-bottom: 0 !important;
+            }
+            &__item {
+                text-align: center;
+                min-height: 440px;
+                img {
+                    width: auto;
+                    max-height: 440px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+            &__caption {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                padding: 10px;
+                color: white;
+                background: rgba(0, 0, 0, 0.6);
+                font-size: 14px;
+            }
+            &__next {
+                position: absolute;
+                top: 50%;
+                right: 0;
+                width: 40px;
+                height: 72px;
+                margin: -36px 0 0 !important;
+                background-image: url(../img/slider_control.png);
+                background-position: -39px 0px;
+                background-repeat: no-repeat;
+                background-size: 80px 72px;
+                z-index: 51;
+                opacity: .6;
+                transition: all 0.2s linear;
+                &:hover {
+                    opacity: 0.9;
+                }
+                a {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                }
+            }
+            &__prev {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 40px;
+                height: 72px;
+                margin: -36px 0 0 !important;
+                background-image: url(../img/slider_control.png);
+                background-position: 0px 0px;
+                background-repeat: no-repeat;
+                background-size: 80px 72px;
+                z-index: 51;
+                opacity: .3;
+                transition: all 0.2s linear;
+                &:hover {
+                    opacity: 0.9;
+                }
+                a {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                }
+            }
+            .bx {
+                &-pager {
+                    @include clearfix;
+                    &-item {
+                        width: 40px;
+                        float: left;
+                        margin-right: 12px;
+                        margin-bottom: 0;
+                        margin-top: 8px;
+                        &:nth-child(8n) {
+                            margin-right: 0;
+                        }
+                    }
+                    &-link {
+                        opacity: 0.3;
+                        transition: all 0.2s linear;
+                        &:hover {
+                            opacity: .7;
+                        }
+                        &.active {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
     }
     /* article related */
     &__related {
         @include clearfix();
         background-color: #f0f0f0;
+        clear: both;
         .story__header {
             padding-top: 12px;
             padding-bottom: 12px;

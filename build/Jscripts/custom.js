@@ -46,7 +46,7 @@ $(function() {
     // toggle floating social
     $(window).scroll(function() {
         if ($(window).scrollTop() > $(".article__summary").offset().top) {
-            $('.social-floating').fadeIn();
+            $('.social-floating').show();
         } else {
             $('.social-floating').hide();
         }
