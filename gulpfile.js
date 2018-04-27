@@ -78,6 +78,12 @@ gulp.task('styles', function() {
         .pipe(browserSync.stream());
 });
 
+// make style for main article in CMS
+gulp.task('copy-cms-article', function() {
+    gulp.src(paths.scss_dev + '/page/cms-article.css')
+        .pipe(gulp.dest(paths.css)).pipe(browserSync.stream({ once: true }));
+
+});
 
 /*copy folder plugin + fonts*/
 // copy only custom.js file
@@ -109,7 +115,7 @@ gulp.task('copyImg', function() {
 });
 
 // copy all
-gulp.task('copy', ['copyJs-UI', 'copyHtml', 'copyFonts', 'copyImg']);
+gulp.task('copy', ['copyJs-UI', 'copyHtml', 'copyFonts', 'copyImg', 'copy-cms-article']);
 
 
 //delete folder root
@@ -120,7 +126,7 @@ gulp.task('delete', function() {
 
 
 // > taskrunner
-gulp.task('default', ['copy', 'scripts', 'styles'],
+gulp.task('default', ['copy', 'scripts', 'styles', 'copy-cms-article'],
     function() {
         browserSync.init({
             server: {
@@ -133,9 +139,10 @@ gulp.task('default', ['copy', 'scripts', 'styles'],
         });
         gulp.watch(paths.js_dev + '/**/*.js', ['copyJs-UI', 'scripts']);
         gulp.watch(paths.scss_dev + '/**/*.scss', ['styles']);
+        gulp.watch(paths.scss_dev + '/page/cms-article.css', ['copy-cms-article']);
         gulp.watch(paths.html_dev + '/**/*.html', function(obj) {
             if (obj.type === 'changed') {
-                gulp.src(obj.path, { "base": paths.html_dev})
+                gulp.src(obj.path, { "base": paths.html_dev })
                     .pipe(gulp.dest(paths.html));
             }
         }).on('change', browserSync.reload);
