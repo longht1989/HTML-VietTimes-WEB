@@ -50,7 +50,7 @@ $(function() {
         $(document).scrollTop() > 0 ? $("#gotop").fadeIn() : $("#gotop").hide()
     });
     // toggle floating social
-    if ($(".article__summary").lenght > 0) {
+    if ($(".article__summary").length > 0) {
         $(window).scroll(function() {
             if ($(window).scrollTop() > $(".article__summary").offset().top) {
                 $('.social-floating').show();
