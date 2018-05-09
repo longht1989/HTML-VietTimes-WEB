@@ -26,12 +26,27 @@
             font-family: $font-family-special;
             text-transform: uppercase;
             transition: all 0.2s linear;
+            font-weight: bold;
             &:hover {
                 background-color: darken($brand-primary, 10%);
             }
         }
     }
     &__content {}
+    &__footer {
+        text-align: center;
+        margin-top: 12px;
+        .btn {
+            width: 100%;
+            border-color: #ddd;
+            font-family: $font-family-special;
+        }
+        span {
+            color: $brand-primary;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
     &--highlight {
         // border: 1px solid #ddd;
         margin-bottom: 24px;
@@ -71,6 +86,19 @@
         }
     }
     &--sub-cate {
+        .zone__title {
+            a {
+                color: $brand-primary;
+                background-color: transparent;
+                padding-left: 8px;
+                line-height: 1em;
+                border-left: 4px solid $brand-primary;
+                &:hover {
+                    color: darken($brand-primary, 10%);
+                    border-color: darken($brand-primary, 10%);
+                }
+            }
+        }
         .zone__content {
             @include clearfix();
         }
@@ -150,7 +178,7 @@
                 border-radius: 8px;
                 transition: all 0.2s linear;
                 &.active {
-                    background-color: $brand-success;
+                    background-color: $brand-primary;
                     width: 24px;
                 }
             }
@@ -211,6 +239,7 @@
                 padding: 0 8px 0 0;
                 color: $brand-primary;
                 z-index: 10;
+                font-weight: normal;
                 &:hover {
                     color: $brand-success;
                 }
@@ -230,12 +259,13 @@
                 }
                 a {
                     font-size: 16px;
-                    color: $brand-success;
-                    padding: 0;
-                    background: none;
+                    padding: 2px 8px;
+                    color: white;
+                    background-color: $brand-primary;
                     position: static;
                     &:hover {
-                        color: darken($brand-success, 10%);
+                        background-color: darken($brand-primary, 10%);
+                        color: white;
                     }
                 }
             }

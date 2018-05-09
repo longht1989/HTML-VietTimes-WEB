@@ -169,7 +169,7 @@
         left: 0;
         right: 0;
         top: 100%;
-        padding: 16px;
+        padding: 16px 0;
         background-color: #f0f0f0;
         font-size: 0;
         font-family: $font-family-special;
@@ -181,6 +181,7 @@
             width: 20%;
             display: inline-block;
             vertical-align: top;
+            padding: 0 12px;
         }
         .cate {
             display: inline-block;
@@ -197,6 +198,7 @@
         }
     }
     .search-open {
+        padding: 16px;
         .form-control {
             float: left;
             width: 90%;
@@ -225,6 +227,14 @@
                 }
             }
         }
+    }
+    &.affix {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.23);
+        border-top: none;
     }
 }
 

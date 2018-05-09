@@ -18,7 +18,7 @@
         }
     }
     &__title {
-        font-size: 16px;
+        font-size: 18px;
         line-height: 1.4em;
         font-weight: bold;
         margin-bottom: 4px;
@@ -36,6 +36,10 @@
                 }
             }
         }
+        .editor_choice &,
+        .sidebar-col & {
+            font-size: 16px;
+        }
     }
     &__meta {
         font-family: $font-family-special;
@@ -52,7 +56,7 @@
     }
     &__author {
         font-weight: bold;
-        color: $brand-success;
+        color: $brand-primary;
         margin-right: 4px;
     }
     &__job {
@@ -127,7 +131,7 @@
             }
         }
         .story__title {
-            font-size: 20px;
+            font-size: 22px;
             line-height: 1.4;
         }
     }
@@ -385,6 +389,25 @@
                     color: white;
                     font-weight: normal;
                     background-color: $brand-primary;
+                    margin-left: 4px;
+                }
+            }
+        }
+    }
+    &.sponsor {
+        .story__title {
+            a {
+                &::after {
+                    content: 'Tin tài trợ';
+                    display: inline-block;
+                    font-size: 0.6em;
+                    line-height: 1.2em;
+                    border-radius: 2px;
+                    padding: 2px 6px;
+                    vertical-align: middle;
+                    color: white;
+                    font-weight: normal;
+                    background-color: $brand-info;
                     margin-left: 4px;
                 }
             }

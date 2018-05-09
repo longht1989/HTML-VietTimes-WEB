@@ -36,6 +36,12 @@ $(function() {
         pagerSelector: ".slider_pager",
         pause: '6000'
     });
+    // affix navigator
+    $('.navigator').affix({
+        offset: {
+            top: $("#site-content").offset().top
+        }
+    })
     // go top 
     $(".sprite-gotop").click(function() {
         return $("body,html").animate({ scrollTop: 0 }, 800), !1
@@ -44,11 +50,13 @@ $(function() {
         $(document).scrollTop() > 0 ? $("#gotop").fadeIn() : $("#gotop").hide()
     });
     // toggle floating social
-    $(window).scroll(function() {
-        if ($(window).scrollTop() > $(".article__summary").offset().top) {
-            $('.social-floating').show();
-        } else {
-            $('.social-floating').hide();
-        }
-    });
+    if ($(".article__summary").lenght > 0) {
+        $(window).scroll(function() {
+            if ($(window).scrollTop() > $(".article__summary").offset().top) {
+                $('.social-floating').show();
+            } else {
+                $('.social-floating').hide();
+            }
+        });
+    }
 });
