@@ -88,15 +88,8 @@
     &--sub-cate {
         .zone__title {
             a {
-                color: $brand-primary;
-                background-color: transparent;
-                padding-left: 8px;
-                line-height: 1em;
-                border-left: 4px solid $brand-primary;
-                &:hover {
-                    color: darken($brand-primary, 10%);
-                    border-color: darken($brand-primary, 10%);
-                }
+                text-transform: none;
+                font-weight: normal;
             }
         }
         .zone__content {
