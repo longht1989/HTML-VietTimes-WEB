@@ -1,0 +1,12 @@
+/* Safari 7.1+ */
+
+_::-webkit-full-page-media,
+_:future,
+ :root {
+    .story--horizontal,
+    .zone--special .story {
+        .story__header {
+            overflow: visible;
+        }
+    }
+}

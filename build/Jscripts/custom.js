@@ -30,11 +30,11 @@ $(function() {
     $('.zone--special .author_slider').bxSlider({
         nextText: '',
         prevText: '',
-        // adaptiveHeight: 1,
+        adaptiveHeight: 1,
         touchEnabled: 0,
         auto: 1,
         pagerSelector: ".slider_pager",
-        pause: '6000'
+        pause: '5500'
     });
     // affix navigator
     $('.navigator').affix({
