@@ -59,4 +59,6 @@ $(function() {
             }
         });
     }
+    // add class for story has gif image
+    $('.story__thumb img[src$=".gif"]').parents('.story').addClass('story--gif');
 });

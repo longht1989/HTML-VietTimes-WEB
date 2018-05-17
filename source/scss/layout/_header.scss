@@ -28,6 +28,7 @@
             border-right: 1px solid #E0E0E0;
             *[class^="sprite-"] {
                 vertical-align: text-bottom;
+                margin-right: 2px;
             }
             &__rss {
                 color: #F26522;
@@ -104,6 +105,9 @@
                 padding-right: 16px;
                 color: $brand-success;
                 display: block;
+            }
+            .sprite-playcircle {
+                margin-right: 2px;
             }
             &:hover {
                 background-color: $brand-success;
