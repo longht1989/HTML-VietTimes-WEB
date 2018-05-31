@@ -223,7 +223,7 @@
         border: 1px solid #e0e0e0;
         border-top: 2px solid $body-bg;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.07);
-        z-index: 2;
+        z-index: 100;
         .col {
             width: 20%;
             display: inline-block;
