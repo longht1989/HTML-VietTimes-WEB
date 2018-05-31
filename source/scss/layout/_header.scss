@@ -93,6 +93,7 @@
     }
     .menu {
         float: left;
+        position: relative;
         >li {
             float: left;
             text-transform: uppercase;
@@ -109,13 +110,22 @@
             .sprite-playcircle {
                 margin-right: 2px;
             }
+            &.is-active {
+                background-color: lighten($brand-success, 5%);
+                >a {
+                    color: white;
+                }
+            }
             &:hover {
                 background-color: $brand-success;
-                a {
+                >a {
                     color: white;
                 }
                 .sprite-playcircle {
                     background-position-y: -50px;
+                }
+                .menu__sub {
+                    left: auto;
                 }
             }
         }
@@ -124,6 +134,27 @@
             a {
                 padding-left: 8px;
                 padding-right: 8px;
+            }
+        }
+        &__sub {
+            position: absolute;
+            background-color: #f0f0f0;
+            z-index: 10;
+            left: -9999em;
+            min-width: 200px;
+            >li {
+                a {
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #000;
+                    text-transform: none;
+                    border-bottom: 1px solid #ddd;
+                }
+                &:hover {
+                    a {
+                        color: $brand-primary;
+                    }
+                }
             }
         }
     }
@@ -144,11 +175,14 @@
                 }
             }
             &--menu {
-                background-color: $brand-success;
-                border-left: 1px solid $brand-success;
+                background-color: lighten($brand-success, 10%);
+                border-left: 1px solid lighten($brand-success, 8%);
                 transition: all 0.2s linear;
                 &:hover {
                     background-color: darken($brand-success, 7%);
+                    .menu-open {
+                        display: block;
+                    }
                 }
                 .menu-full {
                     cursor: pointer;
@@ -224,19 +258,28 @@
     }
     &__sub {
         font-family: $font-family-special;
-        background-color: #f5f5f5;
         border-top: 1px solid #eee;
         z-index: 0;
-        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
         ul {
+            background-color: lighten($brand-success, 10%);
             @include clearfix();
             li {
                 float: left;
+                &.is-active {
+                    background-color: lighten($brand-success, 15%);
+                }
                 a {
                     font-size: 14px;
                     line-height: 32px;
                     display: block;
                     padding: 0 24px;
+                    color: white;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                &+li {
+                    border-left: 1px solid #2b6e96;
                 }
             }
         }

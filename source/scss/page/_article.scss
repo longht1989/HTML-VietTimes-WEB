@@ -31,8 +31,10 @@
         font-size: 14px;
         line-height: 24px;
         @include clearfix;
-        time {
-            display: block;
+        .article__author {
+            font-family: 'MuliBold', sans-serif;
+            color: #333;
+            margin-right: 4px;
         }
         .social-listing {
             margin-top: 8px;
@@ -94,6 +96,23 @@
             font-weight: bold;
             color: $brand-primary;
         }
+        h3,
+        h4,
+        h5,
+        b,
+        em,
+        strong,
+        i {
+            font-family: $font-family-special;
+        }
+        b,
+        strong {
+            font-weight: bold;
+        }
+        i,
+        em {
+            font-style: italic;
+        }
         /* -------------- */
         .full-img {
             display: block;
@@ -108,6 +127,7 @@
                 margin-right: auto;
             }
             .fig {
+                font-family: $font-family-special;
                 font-size: 16px;
                 color: #555;
                 font-style: italic;
@@ -223,7 +243,7 @@
         .box-relate,
         .notification {
             padding: 12px;
-            background: lighten($brand-primary, 30%);
+            background: #fcedd0;
             border: 1px dashed #333;
             &.pull-left,
             &.floatleft {
@@ -247,6 +267,7 @@
         }
         /* quote */
         .quote {
+            font-family: $font-family-special;
             clear: both;
             border-radius: 5px;
             border: 1px solid $brand-success;
@@ -277,6 +298,10 @@
                 width: 50%;
                 float: right;
                 margin-left: 25px;
+            }
+            .photo {
+                float: right;
+                margin-left: 10px;
             }
         }
         table.quote {
