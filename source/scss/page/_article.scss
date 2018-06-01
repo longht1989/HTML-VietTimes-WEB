@@ -510,6 +510,9 @@
                     height: auto;
                 }
             }
+            table.full-img {
+                max-width: initial !important;
+            }
         }
         &__footer {
             .box-comment {
