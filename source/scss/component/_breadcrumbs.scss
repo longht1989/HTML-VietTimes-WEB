@@ -61,12 +61,12 @@
                 padding: 0 8px;
                 color: #111;
             }
-        }
-        &:last-child {
-            a {
-                color: #777;
-                &:hover {
-                    color: $brand-primary;
+            &:last-child {
+                a {
+                    color: #777;
+                    &:hover {
+                        color: $brand-primary;
+                    }
                 }
             }
         }
