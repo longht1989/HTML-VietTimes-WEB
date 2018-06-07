@@ -69,6 +69,32 @@
     }
 }
 
+&.five-cols {
+    @include clearfix;
+    font-size: 0;
+    margin-left: -16px;
+    margin-right: -16px;
+    >* {
+        width: 20%;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 16px;
+    }
+}
+
+&.six-cols {
+    @include clearfix;
+    font-size: 0;
+    margin-left: -16px;
+    margin-right: -16px;
+    >* {
+        width: 16.66%;
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 16px;
+    }
+}
+
 // go top
 #gotop {
     // display: none;

@@ -601,11 +601,9 @@
         }
         &__footer {
             clear: both;
-            width: 666px;
-                margin-left: auto;
-                margin-right: auto;
-            .box-comment {
-            }
+            width: 680px;
+            float: right;
+            .box-comment {}
         }
     }
 }
