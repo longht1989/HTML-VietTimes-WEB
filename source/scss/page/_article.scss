@@ -12,11 +12,13 @@
         &.opinion {
             margin-top: 8px;
             @include clearfix;
-            .avatar {
-                img {
-                    margin-left: auto;
-                    margin-right: auto;
-                    border: 8px solid #eaeaea;
+            .article__opinion {
+                .avatar {
+                    img {
+                        margin-left: auto;
+                        margin-right: auto;
+                        border: 8px solid #eaeaea;
+                    }
                 }
             }
             .header {
@@ -578,6 +580,31 @@
                 width: 666px;
                 margin-left: auto;
                 margin-right: auto;
+            }
+        }
+    }
+    .main-col.large & {
+        &-wrap {
+            padding-left: 80px;
+            padding-right: 80px;
+            &.opinion {
+                .article__body {
+                    width: 680px;
+                }
+            }
+        }
+        &__header {
+            text-align: center;
+        }
+        &__summary {
+            text-align: justify;
+        }
+        &__footer {
+            clear: both;
+            width: 666px;
+                margin-left: auto;
+                margin-right: auto;
+            .box-comment {
             }
         }
     }

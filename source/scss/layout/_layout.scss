@@ -18,7 +18,8 @@
 .main-col {
     float: left;
     width: 700px;
-    &.full {
+    &.full,
+    &.large {
         width: 100%;
         float: none;
     }
