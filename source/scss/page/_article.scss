@@ -9,6 +9,43 @@
         background: white;
         border: 1px solid #ddd;
         box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+        &.opinion {
+            margin-top: 8px;
+            @include clearfix;
+            .avatar {
+                img {
+                    margin-left: auto;
+                    margin-right: auto;
+                    border: 8px solid #eaeaea;
+                }
+            }
+            .header {
+                text-align: center;
+                .name {
+                    font-weight: bold;
+                    margin-top: 8px;
+                    font-family: $font-family-special;
+                    font-family: "Times New Roman", Times, Baskerville, Georgia, serif;
+                    color: $brand-success;
+                }
+                .title {
+                    color: #777;
+                    margin-top: 4px;
+                }
+            }
+            .avatar {}
+            .article__meta {
+                clear: both;
+            }
+            .article__body {
+                float: right;
+                width: 490px;
+            }
+            .article__aside {
+                float: left;
+                width: 160px;
+            }
+        }
     }
     &__header {
         margin-bottom: 16px;
@@ -67,6 +104,28 @@
         img {
             margin-bottom: 4px;
             max-width: 100%;
+        }
+    }
+    &.opinion {
+        margin-top: 8px;
+        @include clearfix;
+        .header {
+            float: right;
+            width: 540px;
+            .name {
+                font-weight: bold;
+            }
+            .title {
+                color: #777;
+                margin-top: 4px;
+            }
+        }
+        .avatar {
+            float: left;
+            width: 110px;
+        }
+        .article__meta {
+            clear: both;
         }
     }
     &__body {
