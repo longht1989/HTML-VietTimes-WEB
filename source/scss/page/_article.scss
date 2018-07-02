@@ -141,6 +141,7 @@
         font-size: 18px;
         line-height: 1.5em;
         color: #333;
+        word-wrap: break-word;
         p,
         div,
         h3,
@@ -194,6 +195,12 @@
                 font-style: italic;
                 text-align: center;
                 display: block;
+            }
+        }
+        table.full-img {
+            text-align: center;
+            tbody {
+                display: inline-block;
             }
         }
         /* -------------- */

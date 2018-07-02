@@ -40,6 +40,22 @@
         .sidebar-col & {
             font-size: 16px;
         }
+        &--sub {
+            font-size: 16px;
+            line-height: 1.3em;
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: #555;
+            a {
+                color: #555;
+            }
+            .editor_choice & {
+                color: #bbb;
+                a {
+                    color: #bbb;
+                }
+            }
+        }
     }
     &__meta {
         font-family: $font-family-special;
@@ -118,7 +134,7 @@
         }
         .story__title {
             font-family: "MuliBold", Arial, "Helvetica Neue", Helvetica, sans-serif;
-            font-size: 24px;
+            font-size: 26px;
             line-height: 1.4em;
             margin-bottom: 0;
         }

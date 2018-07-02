@@ -56,3 +56,35 @@
         vertical-align: text-bottom;
     }
 }
+
+.pull {
+    &-left {
+        float: left;
+    }
+    &-right {
+        float: right;
+    }
+}
+
+.action {
+    .datepicker {
+        padding: 0;
+        background-color: #fff;
+        border-color: #ccc;
+        cursor: pointer;
+        &:hover {}
+        input {
+            cursor: pointer;
+            width: 115px;
+            background-color: transparent;
+            margin-bottom: 0;
+            box-shadow: none;
+            border: none;
+            padding: 4px 8px;
+            &:focus,
+            &:active {
+                outline: none;
+            }
+        }
+    }
+}
