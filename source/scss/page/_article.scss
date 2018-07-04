@@ -592,11 +592,18 @@
     }
     .main-col.large & {
         &-wrap {
-            padding-left: 80px;
-            padding-right: 80px;
+            padding-left: 40px;
+            padding-right: 40px;
             &.opinion {
+                .article__header,
                 .article__body {
-                    width: 680px;
+                    width: 760px;
+                }
+                .article__header {
+                    float: right;
+                }
+                .article__aside {
+                    float: none;
                 }
             }
         }
@@ -608,9 +615,20 @@
         }
         &__footer {
             clear: both;
-            width: 680px;
+            width: 760px;
             float: right;
-            .box-comment {}
+            .box-comment {
+                .topic-comment {
+                    .content-comment {
+                        width: 700px;
+                    }
+                }
+                .sub-comment {
+                    .content-comment {
+                        width: 630px;
+                    }
+                }
+            }
         }
     }
 }
@@ -696,11 +714,14 @@
 // related area
 .area {
     &-related {
-        background-color: white;
         margin: 32px 0 16px;
-        padding: 24px 0 8px;
+        background-color: white;
         .story {
             margin-bottom: 16px;
+        }
+        .site-wrap {
+            padding: 24px 0 8px;
+            background-color: white;
         }
     }
     &__title {
