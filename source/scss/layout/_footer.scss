@@ -16,26 +16,34 @@
     .site-wrap {
         padding: 24px 0;
         background-color: white;
+        display: table;
     }
     .logo {
-        float: left;
+        vertical-align: top;
         img {
             width: auto;
             height: 40px;
+            display: table-cell;
         }
     }
     .info {
-        float: left;
-        margin-left: 12px;
+        vertical-align: top;
+        padding-left: 12px;
+        display: table-cell;
     }
     .contact {
-        float: right;
+
         text-align: right;
+        display: table-cell;
+        vertical-align: bottom;
         a {
             color: #555;
             &:hover {
                 text-decoration: underline;
             }
         }
+    }
+    h4 {
+        font-size: 17px;
     }
 }
