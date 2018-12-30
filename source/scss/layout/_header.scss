@@ -14,62 +14,78 @@
         line-height: 20px;
         color: #777;
         @include clearfix();
+
         .site-wrap {
             padding: 5px 0;
             background-color: #f0f0f0;
         }
     }
+
     .links {
         float: right;
+
         .tools {
             float: left;
             padding-right: 12px;
             margin-right: 12px;
             border-right: 1px solid #E0E0E0;
+
             *[class^="sprite-"] {
                 vertical-align: text-bottom;
                 margin-right: 2px;
             }
+
             &__rss {
                 color: #F26522;
+
                 &:hover {
                     color: $brand-primary;
                 }
             }
+
             &__mobile {
                 color: $brand-success;
                 margin-left: 8px;
+
                 &:hover {
                     color: $brand-primary;
                 }
             }
         }
+
         .social {
             float: left;
+
             li {
                 display: inline-block;
+
                 &+li {
                     margin-left: 4px;
                 }
             }
+
             [class^="sprite-"] {
                 vertical-align: text-top;
             }
         }
     }
+
     .content {
         @include clearfix();
         background-color: white;
+
         .site-wrap {
             padding: 16px 0;
             background-color: white;
         }
     }
+
     .logo {
         width: 250px;
         float: left;
         margin: 10px 0;
     }
+
     .banner {
         float: right;
     }
@@ -82,18 +98,23 @@
     background-color: white;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
     z-index: 2;
+
     .site-wrap {
         background-color: white;
     }
+
     [class^=sprite-] {
         transition: none;
     }
+
     .site-wrap {
         position: relative;
     }
+
     .menu {
         float: left;
         position: relative;
+
         >li {
             float: left;
             text-transform: uppercase;
@@ -101,47 +122,59 @@
             font-size: 16px;
             line-height: 35px;
             transition: background 0.2s linear;
+
             a {
                 padding-left: 16px;
                 padding-right: 16px;
                 color: $brand-success;
                 display: block;
             }
+
             .sprite-playcircle {
                 margin-right: 2px;
             }
+
             &.is-active {
                 background-color: lighten($brand-success, 5%);
+
                 >a {
                     color: white;
                 }
             }
+
             &:hover {
                 background-color: $brand-success;
+
                 >a {
                     color: white;
                 }
+
                 .sprite-playcircle {
                     background-position-y: -50px;
                 }
+
                 .menu__sub {
                     left: auto;
                 }
             }
         }
+
         .home {
             background-color: $brand-primary;
+
             a {
                 padding-left: 8px;
                 padding-right: 8px;
             }
         }
+
         &__sub {
             position: absolute;
             background-color: #f0f0f0;
             z-index: 10;
             left: -9999em;
             min-width: 200px;
+
             >li {
                 a {
                     font-size: 14px;
@@ -150,6 +183,7 @@
                     text-transform: none;
                     border-bottom: 1px solid #ddd;
                 }
+
                 &:hover {
                     a {
                         color: $brand-primary;
@@ -158,32 +192,40 @@
             }
         }
     }
+
     .tools {
         float: right;
+
         .button {
             float: left;
             line-height: 35px;
+
             &--search {
                 background-color: #F0F0F0;
                 text-align: center;
                 width: 35px;
                 cursor: pointer;
                 transition: background 0.2s linear;
+
                 &.is-active,
                 &:hover {
                     background-color: #ddd;
                 }
             }
+
             &--menu {
                 background-color: lighten($brand-success, 10%);
                 border-left: 1px solid lighten($brand-success, 8%);
                 transition: all 0.2s linear;
+
                 &:hover {
                     background-color: darken($brand-success, 7%);
+
                     .menu-open {
                         display: block;
                     }
                 }
+
                 .menu-full {
                     cursor: pointer;
                     padding-left: 16px;
@@ -192,16 +234,20 @@
                     text-transform: uppercase;
                     font-weight: 900;
                     display: block;
+
                     .sprite-navbar {
                         margin-right: 4px;
                     }
                 }
+
                 &.is-active {
                     background-color: #F0F0F0;
                     border-left-color: #e0e0e0;
+
                     .menu-full {
                         color: $brand-success;
                     }
+
                     .sprite-navbar {
                         background-position-y: -100px;
                     }
@@ -209,6 +255,7 @@
             }
         }
     }
+
     .menu-open,
     .search-open {
         display: none;
@@ -224,12 +271,14 @@
         border-top: 2px solid $body-bg;
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.07);
         z-index: 100;
+
         .col {
             width: 20%;
             display: inline-block;
             vertical-align: top;
             padding: 0 12px;
         }
+
         .cate {
             display: inline-block;
             font-size: 16px;
@@ -238,52 +287,64 @@
             padding-bottom: 2px;
             border-bottom: 4px solid $brand-success;
         }
+
         .subcate {
             font-size: 14px;
             font-weight: normal;
             margin-top: 12px;
         }
     }
+
     .search-open {
         padding: 16px;
+
         .form-control {
             float: left;
             width: 90%;
         }
+
         .btn {
             float: right;
             width: 10%;
             text-align: center;
         }
     }
+
     &__sub {
         font-family: $font-family-special;
         border-top: 1px solid #eee;
         z-index: 0;
+
         ul {
             background-color: lighten($brand-success, 10%);
             @include clearfix();
+
             li {
                 float: left;
+
                 &.is-active {
                     background-color: lighten($brand-success, 15%);
                 }
+
                 a {
                     font-size: 14px;
                     line-height: 32px;
                     display: block;
                     padding: 0 24px;
                     color: white;
+
                     &:hover {
                         text-decoration: underline;
                     }
                 }
+
                 &+li {
                     border-left: 1px solid #2b6e96;
                 }
             }
         }
     }
+
     &.affix {
         position: fixed;
         top: 0;
@@ -301,10 +362,13 @@
     margin-top: 8px;
     max-height: 35px;
     overflow: hidden;
+
     &__listing {
         float: left;
+
         li {
             float: left;
+
             &::before {
                 display: inline-block;
                 content: '•';
@@ -313,16 +377,19 @@
                 position: relative;
                 top: -2px;
             }
+
             &+li {
                 margin-left: 24px;
             }
         }
+
         .event__label {
             &::before {
                 display: none;
             }
         }
     }
+
     &__label {
         font-family: $font-family-special;
         color: $brand-primary; // margin-right: 12px;
@@ -330,4 +397,26 @@
         text-transform: uppercase;
         font-weight: bold;
     }
+}
+
+/*Tet 2019*/
+.site-header {
+    .logo {
+        margin: 0;
+        height: 90px;
+
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
+
+    .content {
+        background: url('../img/header-bg.png') left top repeat-x #fff;
+
+        .site-wrap {
+            background-color: transparent;
+        }
+    }
+
 }

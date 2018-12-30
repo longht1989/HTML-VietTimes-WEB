@@ -166,7 +166,7 @@
                         <div class="article__summary">Construction of a giant controversial dam in Laos has been well underway since it began in late 2012. <a href="#">Laos</a> is also set to push ahead with a second hydropower dam on the Mekong River this year in the face of growing concerns among its neighbors.</div>
                         <div class="article__avatar">
                             <p><img src="https://source.unsplash.com/random/666x374?sig=1"></p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero natus in molestiae error laborum ab, quam quis quod officia voluptatum?</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero natus in molestiae error laborum ab, quam quis quod officia voluptatum?</p>
                         </div>
                         <!-- floating social -->
                         <div class="social-floating">
@@ -186,168 +186,258 @@
                                 <img class="" src="https://source.unsplash.com/random/682x384?sig=2" alt="Diplomacy between the West and Russia is becoming more complex">
                                 <span class="fig">Diplomacy between the West and Russia is becoming more complex</span>
                             </div>
+                            <div class="slider">
+                                <ul class="bxslider">
+                                    <li>
+                                        <table class="full-img">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <img class="img-responsive" src="https://source.unsplash.com/random/682x384?sig=2" alt="Diplomacy between the West and Russia is becoming more complex" data-src="https://source.unsplash.com/random/682x384?sig=2">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="fig">Diplomacy between the West and Russia is becoming more complex</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <table class="full-img">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <img class="img-responsive" src="https://source.unsplash.com/random/682x384?sig=2" alt="Diplomacy between the West and Russia is becoming more complex" data-src="https://source.unsplash.com/random/682x384?sig=2">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="fig">Diplomacy between the West and Russia is becoming more complex</p>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </li>
+                                    <li>
+                                        <div class="slider__item">
+                                            <div class="slider__image">
+                                                <img src="https://source.unsplash.com/random/900x1200?sig=9" data-src="https://source.unsplash.com/random/80x60?sig=2">
+                                            </div>
+                                                <div class="slider__caption">
+                                                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+                                                </div>
+                                            </div>
+                                    </li>
+                                    <li><img src="https://source.unsplash.com/random/780x440?sig=2" data-src="https://source.unsplash.com/random/80x60?sig=3"></li>
+                                    <li>
+                                        <div class="slider__item">
+                                            <div class="slider__image">
+                                                <img src="https://source.unsplash.com/random/780x440?sig=3" data-src="https://source.unsplash.com/random/80x60?sig=4">
+                                            </div>
+                                                <div class="slider__caption">
+                                                    <div><a href="#">Lorem ipsum</a> dolor sit amet, consectetur adipisicing elit. Laudantium, fugit.</div>
+                                                </div>
+                                            </div>
+                                    </li>
+                                    <li><img src="https://source.unsplash.com/random/780x440?sig=4" data-src="https://source.unsplash.com/random/80x60?sig=5"></li>
+                                    <li><img src="https://source.unsplash.com/random/780x440?sig=5" data-src="https://source.unsplash.com/random/80x60?sig=6"></li>
+                                    <li>
+                                        <div class="slider__item">
+                                            <div class="slider__image">
+                                                <img src="https://source.unsplash.com/random/780x440?sig=0" data-src="https://source.unsplash.com/random/80x60?sig=0">
+                                            </div>
+                                                <div class="slider__caption">
+                                                    <div><a href="#">Lorem ipsum</a> dolor sit amet, consectetur adipisicing elit. Laudantium, fugit.</div>
+                                                </div>
+                                            </div>
+                                    </li>
+                                    <li><img src="https://source.unsplash.com/random/780x440?sig=6" data-src="https://source.unsplash.com/random/80x60?sig=7"></li>
+                                    <li><img src="https://source.unsplash.com/random/780x440?sig=7" data-src="https://source.unsplash.com/random/80x60?sig=8"></li>
+                                </ul>
+                                <div class="slider__control">
+                                    <div class="slider__prev"></div>
+                                    <div class="slider__next"></div>
+                                </div>
+                                <script type="text/javascript">
+                                $(function() {
+                                    $('.bxslider').bxSlider({
+                                        touchEnabled: 0,
+                                        prevText: '',
+                                        nextText: '',
+                                        nextSelector: '.slider__next',
+                                        prevSelector: '.slider__prev',
+                                        buildPager: function(slideIndex) {
+                                            var sliderimage = $('.bxslider li img');
+                                            return '<img src="' + sliderimage[slideIndex].getAttribute('data-src') + '">';
+                                        }
+                                    });
+                                });
+                                </script>
+                            </div>
                             <p>The obvious route for increasing diplomatic pressure - the UN Security Council - is blocked because Russia is a permanent member and can veto any proposed action. Other organs of the UN, such as the General Assembly, could pass non-binding resolutions, but Russia could simply ignore them.</p>
                             <p class="notification pull-left">There is always a question mark over punitive measures. Are they a help or a hindrance? As a broad principle, Western nations publicly preach the benefits of engagement over isolation and regard the cold-shoulder as an extreme measure.</p>
                             <p>Where it has been able to, the West has made tentative moves towards isolating Russia, cancelling a G8 meeting earlier this year and suspending</p>
                             <p>Moscow's membership. But Russia cannot be so easily kicked out of the Security Council, the consensus-based Organisation for Security and Co-operation in Europe - custodian of the Helsinki Final Act that does not permit forcible changes of borders - or the World Trade Organization Moscow waited so long to join. Countries are then left with the possibility of taking bilateral action through visa bans and other restrictions.</p>
                             <p class="notification">There is always a question mark over punitive measures. Are they a help or a hindrance? As a broad principle, Western nations publicly preach the benefits of engagement over isolation and regard the cold-shoulder as an extreme measure.</p>
                             <div class="video-player"><img src="https://source.unsplash.com/random/682x384?sig=3" alt=""></div>
-                            <p>But engagement has failed to check the Russian advance - or force an about-turn in Moscow. Russia acted fast in annexing Crimea, and the interim government in Kiev now fears that Moscow plans to swallow up more of Ukraine and move on to other areas with large Russian populations, such as Moldova's Trans-Dniester region. The West's tacit concession of the Crimea issue has done nothing to strengthen its diplomatic hand.</p>
-                            <h3>Expand economic measures</h3>
-                            <p class="notification pull-right">There is always a question mark over punitive measures. Are they a help or a hindrance? As a broad principle, Western nations publicly preach the benefits of engagement over isolation and regard the cold-shoulder as an extreme measure.</p>
-                            <p>The obvious route for increasing diplomatic pressure - the UN Security Council - is blocked because Russia is a permanent member and can veto any proposed action. Other organs of the UN, such as the General Assembly, could pass non-binding resolutions, but Russia could simply ignore them.</p>
-                            <p>Where it has been able to, the West has made tentative moves towards isolating Russia, cancelling a G8 meeting earlier this year and suspending</p>
-                            <div class="clearfix"></div>
-                            <p>There is always a question mark over punitive measures. Are they a help or a hindrance? As a broad principle, Western nations publicly preach the benefits of engagement over isolation and regard the cold-shoulder as an extreme measure.</p>
-                            <p>But engagement has failed to check the Russian advance - or force an about-turn in Moscow. Russia acted fast in annexing Crimea, and the interim government in Kiev now fears that Moscow plans to swallow up more of Ukraine and move on to other areas with large Russian populations, such as Moldova's Trans-Dniester region. The West's tacit concession of the Crimea issue has done nothing to strengthen its diplomatic hand.</p>
-                            <h3>Do nothing</h3>
-                            <p>The obvious route for increasing diplomatic pressure - the UN Security Council - is blocked because Russia is a permanent member and can veto any proposed action. Other organs of the UN, such as the General Assembly, could pass non-binding resolutions, but Russia could simply ignore them.</p>
-                            <p>Where it has been able to, the West has made tentative moves towards isolating Russia, cancelling a G8 meeting earlier this year and suspending</p>
-                            <p>Moscow's membership. But Russia cannot be so easily kicked out of the Security Council, the consensus-based Organisation for Security and Co-operation in Europe - custodian of the Helsinki Final Act that does not permit forcible changes of borders - or the World Trade Organization Moscow waited so long to join. Countries are then left with the possibility of taking bilateral action through visa bans and other restrictions.</p>
-                            <p>There is always a question mark over punitive measures. Are they a help or a hindrance? As a broad principle, Western nations publicly preach the benefits of engagement over isolation and regard the cold-shoulder as an extreme measure.</p>
-                            <p>But engagement has failed to check the Russian advance - or force an about-turn in Moscow. Russia acted fast in annexing Crimea, and the interim government in Kiev now fears that Moscow plans to swallow up more of Ukraine and move on to other areas with large Russian populations, such as Moldova's Trans-Dniester region. The West's tacit concession of the Crimea issue has done nothing to strengthen its diplomatic hand.</p>
-                            <div class="article__related">
-                                <article class="story story--horizontal">
-                                    <figure class="story__thumb">
-                                        <a href="3-detail.html"><img src="https://source.unsplash.com/random/160x120?sig=1" alt=""></a>
-                                    </figure>
-                                    <div class="story__header">
-                                        <h2 class="story__title"><a href="3-detail.html">Sapiens quoquo platonem epicureum emolumento comit molestiam possint.</a></h2>
-                                    </div>
-                                </article>
-                            </div>
-                            <p class="article__author">Nhóm P.V thực hiện</p>
-                        </div>
-                    </div>
-                    <!-- end article main content  -->
-                    <!-- article footer -->
-                    <footer class="article__footer">
-                        <!-- article tag-->
-                        <div class="article__tag clearfix">
-                            <h3 class="tag-label">Từ khóa: </h3>
-                            <a class="tag-item" href="#">đại sứ</a>
-                            <a class="tag-item" href="#">Mỹ</a>
-                            <a class="tag-item" href="#">doanh nghiệp Mỹ</a>
-                            <a class="tag-item" href="#">hiệp định thương mại tự do</a>
-                            <a class="tag-item" href="#">quan hệ</a>
-                            <a class="tag-item" href="#">Cường dollar</a>
-                            <a class="tag-item" href="#">lợi ích</a>
-                            <a class="tag-item" href="#">Liên Hợp Quốc Mỹ</a>
-                            <a class="tag-item" href="#">doanh nghiệp Mỹ</a>
-                            <a class="tag-item" href="#">hiệp định thương mại tự do</a>
-                            <a class="tag-item" href="#">quan hệ</a>
-                            <a class="tag-item" href="#">Cường dollar</a>
-                            <a class="tag-item" href="#">lợi ích</a>
-                            <a class="tag-item" href="#">Liên Hợp Quốc</a>
-                        </div>
-                        <!-- .end article tags -->
-                        <div class="article__react clearfix">
-                            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=156&layout=button_count&action=like&size=small&show_faces=true&share=true&height=46&appId" width="156" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-                        </div>
-                        <div class="article__extend">
-                            <div class="info">
-                                <p>Theo dõi tin tức VietTimes trên các mạng xã hội.</p>
-                                <p><b>Tin 24h - Tin 360° - Thị trường</b></p>
-                                <p>Liên hệ cung cấp thông tin và gửi tin bài cộng tác.</p>
-                                <p>Hotline: <b>0902 294 950</b></p>
-                                <p>Email: <a href="mailto:toasoan@viettimes.vn">toasoan@viettimes.vn</a></p>
-                            </div>
-                            <div class="social">
-                                <div>
-                                    <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=102&layout=button_count&action=like&size=small&show_faces=false&share=false&height=21&appId" width="102" height="21" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-                                </div>
-                                <div>
-                                    <div class="zalo-follow-only-button" data-oaid="2448217563321467516"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- box comment -->
-                        <div class="box-comment">
-                            <h3>Ý kiến bạn đọc</h3>
-                            <div class="input clearfix">
-                                <textarea class="form-control"></textarea>
-                                <p class="note">Ý kiến của bạn sẽ được biên tập trước khi đăng. Xin vui lòng gõ tiếng Việt có dấu</p>
-                                <button class="btn btn-success btn-sm btnSubmit">Gửi bình luận</button>
-                            </div>
-                            <div class="user">
-                                <div class="comment inner-comment">
-                                    <div class="topic-comment">
-                                        <span class="avatar avatar-comment"><img src="../app_themes/img/user_avatar.png"></span>
-                                        <div class="content content-comment">
-                                            <p class="name info-author">Nguyễn Văn Tuấn</p>
-                                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                            <p class="tool comment-actions action-comment">
-                                                <a href="#" class="btnLike active cmt-like-ed"><i class="fa fa-heart"></i>Đã thích</a>
-                                                <a href="#" class="btnReply cmt-reply">Trả lời</a>
-                                                <span class="sprite-thumbup"></span> <span class="count">(1)</span>
-                                            </p>
+                                <p>But engagement has failed to check the Russian advance - or force an about-turn in Moscow. Russia acted fast in annexing Crimea, and the interim government in Kiev now fears that Moscow plans to swallow up more of Ukraine and move on to other areas with large Russian populations, such as Moldova's Trans-Dniester region. The West's tacit concession of the Crimea issue has done nothing to strengthen its diplomatic hand.</p>
+                                <h3>Expand economic measures</h3>
+                                <p class="notification pull-right">There is always a question mark over punitive measures. Are they a help or a hindrance? As a broad principle, Western nations publicly preach the benefits of engagement over isolation and regard the cold-shoulder as an extreme measure.</p>
+                                <p>The obvious route for increasing diplomatic pressure - the UN Security Council - is blocked because Russia is a permanent member and can veto any proposed action. Other organs of the UN, such as the General Assembly, could pass non-binding resolutions, but Russia could simply ignore them.</p>
+                                <p>Where it has been able to, the West has made tentative moves towards isolating Russia, cancelling a G8 meeting earlier this year and suspending</p>
+                                <div class="clearfix"></div>
+                                <p>There is always a question mark over punitive measures. Are they a help or a hindrance? As a broad principle, Western nations publicly preach the benefits of engagement over isolation and regard the cold-shoulder as an extreme measure.</p>
+                                <p>But engagement has failed to check the Russian advance - or force an about-turn in Moscow. Russia acted fast in annexing Crimea, and the interim government in Kiev now fears that Moscow plans to swallow up more of Ukraine and move on to other areas with large Russian populations, such as Moldova's Trans-Dniester region. The West's tacit concession of the Crimea issue has done nothing to strengthen its diplomatic hand.</p>
+                                <h3>Do nothing</h3>
+                                <p>The obvious route for increasing diplomatic pressure - the UN Security Council - is blocked because Russia is a permanent member and can veto any proposed action. Other organs of the UN, such as the General Assembly, could pass non-binding resolutions, but Russia could simply ignore them.</p>
+                                <p>Where it has been able to, the West has made tentative moves towards isolating Russia, cancelling a G8 meeting earlier this year and suspending</p>
+                                <p>Moscow's membership. But Russia cannot be so easily kicked out of the Security Council, the consensus-based Organisation for Security and Co-operation in Europe - custodian of the Helsinki Final Act that does not permit forcible changes of borders - or the World Trade Organization Moscow waited so long to join. Countries are then left with the possibility of taking bilateral action through visa bans and other restrictions.</p>
+                                <p>There is always a question mark over punitive measures. Are they a help or a hindrance? As a broad principle, Western nations publicly preach the benefits of engagement over isolation and regard the cold-shoulder as an extreme measure.</p>
+                                <p>But engagement has failed to check the Russian advance - or force an about-turn in Moscow. Russia acted fast in annexing Crimea, and the interim government in Kiev now fears that Moscow plans to swallow up more of Ukraine and move on to other areas with large Russian populations, such as Moldova's Trans-Dniester region. The West's tacit concession of the Crimea issue has done nothing to strengthen its diplomatic hand.</p>
+                                <div class="article__related">
+                                    <article class="story story--horizontal">
+                                        <figure class="story__thumb">
+                                            <a href="3-detail.html"><img src="https://source.unsplash.com/random/160x120?sig=1" alt=""></a>
+                                        </figure>
+                                        <div class="story__header">
+                                            <h2 class="story__title"><a href="3-detail.html">Sapiens quoquo platonem epicureum emolumento comit molestiam possint.</a></h2>
                                         </div>
+                                    </article>
+                                </div>
+                                <p class="article__author">Nhóm P.V thực hiện</p>
+                            </div>
+                        </div>
+                        <!-- end article main content  -->
+                        <!-- article footer -->
+                        <footer class="article__footer">
+                            <!-- article tag-->
+                            <div class="article__tag clearfix">
+                                <h3 class="tag-label">Từ khóa: </h3>
+                                <a class="tag-item" href="#">đại sứ</a>
+                                <a class="tag-item" href="#">Mỹ</a>
+                                <a class="tag-item" href="#">doanh nghiệp Mỹ</a>
+                                <a class="tag-item" href="#">hiệp định thương mại tự do</a>
+                                <a class="tag-item" href="#">quan hệ</a>
+                                <a class="tag-item" href="#">Cường dollar</a>
+                                <a class="tag-item" href="#">lợi ích</a>
+                                <a class="tag-item" href="#">Liên Hợp Quốc Mỹ</a>
+                                <a class="tag-item" href="#">doanh nghiệp Mỹ</a>
+                                <a class="tag-item" href="#">hiệp định thương mại tự do</a>
+                                <a class="tag-item" href="#">quan hệ</a>
+                                <a class="tag-item" href="#">Cường dollar</a>
+                                <a class="tag-item" href="#">lợi ích</a>
+                                <a class="tag-item" href="#">Liên Hợp Quốc</a>
+                            </div>
+                            <!-- .end article tags -->
+                            <div class="article__react clearfix">
+                                <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=156&layout=button_count&action=like&size=small&show_faces=true&share=true&height=46&appId" width="156" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                            </div>
+                            <div class="article__extend">
+                                <div class="info">
+                                    <p>Theo dõi tin tức VietTimes trên các mạng xã hội.</p>
+                                    <p><b>Tin 24h - Tin 360° - Thị trường</b></p>
+                                    <p>Liên hệ cung cấp thông tin và gửi tin bài cộng tác.</p>
+                                    <p>Hotline: <b>0902 294 950</b></p>
+                                    <p>Email: <a href="mailto:toasoan@viettimes.vn">toasoan@viettimes.vn</a></p>
+                                </div>
+                                <div class="social">
+                                    <div>
+                                        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=102&layout=button_count&action=like&size=small&show_faces=false&share=false&height=21&appId" width="102" height="21" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
                                     </div>
-                                    <div class="sub-comments sub-comment">
-                                        <div class="comment">
-                                            <div class="avatar avatar-comment"><img src="../app_themes/img/user_avatar.png"></div>
+                                    <div>
+                                        <div class="zalo-follow-only-button" data-oaid="2448217563321467516"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- box comment -->
+                            <div class="box-comment">
+                                <h3>Ý kiến bạn đọc</h3>
+                                <div class="input clearfix">
+                                    <textarea class="form-control"></textarea>
+                                    <p class="note">Ý kiến của bạn sẽ được biên tập trước khi đăng. Xin vui lòng gõ tiếng Việt có dấu</p>
+                                    <button class="btn btn-success btn-sm btnSubmit">Gửi bình luận</button>
+                                </div>
+                                <div class="user">
+                                    <div class="comment inner-comment">
+                                        <div class="topic-comment">
+                                            <span class="avatar avatar-comment"><img src="../app_themes/img/user_avatar.png"></span>
                                             <div class="content content-comment">
-                                                <p class="name info-author">Chitien Nguyen</p>
+                                                <p class="name info-author">Nguyễn Văn Tuấn</p>
                                                 <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                                 <p class="tool comment-actions action-comment">
-                                                    <a href="#" class="btnLike active cmt-like-ed"><i class="fa fa-heart"></i>Đã thích(9)</a>
+                                                    <a href="#" class="btnLike active cmt-like-ed"><i class="fa fa-heart"></i>Đã thích</a>
                                                     <a href="#" class="btnReply cmt-reply">Trả lời</a>
                                                     <span class="sprite-thumbup"></span> <span class="count">(1)</span>
                                                 </p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="sub-comments sub-comment">
-                                        <div class="comment">
-                                            <span class="avatar avatar-comment"><img src="../app_themes/img/user_avatar.png"></span>
-                                            <div class="content content-comment">
-                                                <p class="name info-author">Chitien Nguyen</p>
-                                                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                                <div class="tool comment-actions action-comment">
-                                                    <a href="#" class="btnLike cmt-like">Thích</a>
-                                                    <a href="#" class="btnReply cmt-reply">Trả lời</a>
-                                                    <span class="sprite-thumbup"></span> <span class="count">(1)</span>
-                                                    <div class="reply action-comment-reply">
-                                                        <textarea class="form-control" placeholder="Nhập nội dung trả lời..."></textarea>
-                                                        <button class="btnSubmit">Gửi đi</button>
+                                        <div class="sub-comments sub-comment">
+                                            <div class="comment">
+                                                <div class="avatar avatar-comment"><img src="../app_themes/img/user_avatar.png"></div>
+                                                    <div class="content content-comment">
+                                                        <p class="name info-author">Chitien Nguyen</p>
+                                                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                        <p class="tool comment-actions action-comment">
+                                                            <a href="#" class="btnLike active cmt-like-ed"><i class="fa fa-heart"></i>Đã thích(9)</a>
+                                                            <a href="#" class="btnReply cmt-reply">Trả lời</a>
+                                                            <span class="sprite-thumbup"></span> <span class="count">(1)</span>
+                                                        </p>
                                                     </div>
+                                                </div>
+                                            </div>
+                                            <div class="sub-comments sub-comment">
+                                                <div class="comment">
+                                                    <span class="avatar avatar-comment"><img src="../app_themes/img/user_avatar.png"></span>
+                                                    <div class="content content-comment">
+                                                        <p class="name info-author">Chitien Nguyen</p>
+                                                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                        <div class="tool comment-actions action-comment">
+                                                            <a href="#" class="btnLike cmt-like">Thích</a>
+                                                            <a href="#" class="btnReply cmt-reply">Trả lời</a>
+                                                            <span class="sprite-thumbup"></span> <span class="count">(1)</span>
+                                                            <div class="reply action-comment-reply">
+                                                                <textarea class="form-control" placeholder="Nhập nội dung trả lời..."></textarea>
+                                                                <button class="btnSubmit">Gửi đi</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment inner-comment no-sub-comment">
+                                            <div class="topic-comment">
+                                                <span class="avatar avatar-comment"><img src="../app_themes/img/user_avatar.png"></span>
+                                                <div class="content content-comment">
+                                                    <p class="name info-author">Nguyễn Văn Tuấn</p>
+                                                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                    <p class="tool comment-actions action-comment">
+                                                        <a href="#" class="btnLike cmt-like">Thích</a>
+                                                        <a href="#" class="btnReply cmt-reply">Trả lời</a>
+                                                        <span class="sprite-thumbup"></span> <span class="count">(1)</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment inner-comment no-sub-comment last-comment">
+                                            <div class="topic-comment">
+                                                <span class="avatar avatar-comment"><img src="../app_themes/img/user_avatar.png"></span>
+                                                <div class="content content-comment">
+                                                    <p class="name info-author">Nguyễn Văn Tuấn</p>
+                                                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                                    <p class="tool comment-actions action-comment">
+                                                        <a href="#" class="btnLike cmt-like">Thích</a>
+                                                        <a href="#" class="btnReply cmt-reply">Trả lời</a>
+                                                        <span class="sprite-thumbup"></span> <span class="count">(1)</span>
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="comment inner-comment no-sub-comment">
-                                    <div class="topic-comment">
-                                        <span class="avatar avatar-comment"><img src="../app_themes/img/user_avatar.png"></span>
-                                        <div class="content content-comment">
-                                            <p class="name info-author">Nguyễn Văn Tuấn</p>
-                                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                            <p class="tool comment-actions action-comment">
-                                                <a href="#" class="btnLike cmt-like">Thích</a>
-                                                <a href="#" class="btnReply cmt-reply">Trả lời</a>
-                                                <span class="sprite-thumbup"></span> <span class="count">(1)</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="comment inner-comment no-sub-comment last-comment">
-                                    <div class="topic-comment">
-                                        <span class="avatar avatar-comment"><img src="../app_themes/img/user_avatar.png"></span>
-                                        <div class="content content-comment">
-                                            <p class="name info-author">Nguyễn Văn Tuấn</p>
-                                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                            <p class="tool comment-actions action-comment">
-                                                <a href="#" class="btnLike cmt-like">Thích</a>
-                                                <a href="#" class="btnReply cmt-reply">Trả lời</a>
-                                                <span class="sprite-thumbup"></span> <span class="count">(1)</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end box comment -->
-                    </footer>
+                                <!-- end box comment -->
+                        </footer>
                 </article>
             </div>
         </div>
